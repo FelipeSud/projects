@@ -8,7 +8,7 @@
 </head>
 <body>
     <button onclick="mostrarTabuada()"> Mostrar Tabuada</button>
-    <button>Limpar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
     <div id="output"></div>
 
     <script>
@@ -16,9 +16,21 @@
 
         const output = document.getElementById("output") 
        function mostrarTabuada(){
-           output.innerHTML = " <br>"
+         let n = parseFloat( prompt("Digite um número"))
+         let msg = ""
+        for(let i = 0; i <= 1000; i++){
+            msg += `${n} x ${i} = ${n * i} <br>` 
+        }
+           
+           output.innerHTML = msg
 
        } 
+
+    function limparTabuada(){
+        output.innerText = ""     
+    }
+ 
+
     </script>
 
 </body>
