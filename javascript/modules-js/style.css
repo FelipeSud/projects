@@ -1,0 +1,56 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    margin: 50px 0;
+    
+}
+
+.container .exercise-title {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+    margin-top: 50px ;
+}
+
+.container .exercise-list {
+    flex-direction: column;
+    width: 100%;
+    
+   
+
+}
+
+.background {
+    background-color: aquamarine;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40%;
+    
+}
+
+.flex-container .footer {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+
+.flex-container .left {
+    margin-left: 20px;
+}
+
+.flex-container .right {
+    margin-right: 30px;
+}
